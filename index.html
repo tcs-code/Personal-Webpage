@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="A personal web page showcasing information about me.">
+    <title>About Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <section>
+        <h2>Profile Picture</h2>
+        <a href="https://www.yoursocialmediahandle.com" target="_blank">
+            <img src="IMG_20230113_100901.jpg" alt="Your Name" id="profile-picture">
+        </a>
+    </section>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I am a web development enthusiast with strengths in coding, creativity, and problem-solving. My weaknesses include
+            sometimes being a perfectionist and having a tendency to overthink.</p>
+
+        <h3>Strengths:</h3>
+        <ul>
+            <li>Coding</li>
+            <li>Creativity</li>
+            <li>Problem-solving</li>
+        </ul>
+
+        <h3>Weaknesses:</h3>
+        <ul>
+            <li>Perfectionism</li>
+            <li>Overthinking</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Bucket List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Items</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pass out of Baselios</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Write a book</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>River Rafting</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Learn French</td>
+                    <td>Not Completed</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Run a marathon</td>
+                    <td>Not Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Favourite Media</h2>
+        
+        <h3>Favourite Movie Clip:</h3>
+        <video id="favorite-movie" controls width="300">
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <h3>Favourite Song:</h3>
+        <div id="song-container">
+            <img id="cd-image" src="images.jpeg" alt="Song CD Cover">
+            <audio id="favorite-song" controls>
+                <source src="Benson Boone - Beautiful Things (Official Lyric Video).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+    
+
+    <button id="alert-button">Click me!</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

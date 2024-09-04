@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    color: #f4f4f4; /* Changed text color to a light grey */
+    background-image: url('berserk-anime-cool-badass-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+img#profile-picture {
+    width: 200px;
+    height: 250px;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text for the header */
+}
+
+h1, h2, h3 {
+    color: #ffffff; /* White text for all headings */
+}
+
+p, ul, li, table, th, td {
+    color: #f4f4f4; /* Light grey text for content */
+}
+
+table th {
+    background-color: #333333; /* Darker background for table headers */
+    color: #f4f4f4; /* Light text in table headers */
+}
+
+button#alert-button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green background for better visibility */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button#alert-button:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+}
+
+video, audio {
+    transition: width 0.3s ease, height 0.3s ease; /* Smooth transition */
+}
+
+#favorite-movie.expanded {
+    width: 500px; /* Expanded size for the video */
+    height: auto; /* Maintains aspect ratio */
+}
+
+#favorite-song.expanded {
+    width: 400px; /* Expanded size for the audio */
+}
+#song-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#cd-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+#cd-image.rotating {
+    animation: rotate 2s linear infinite; /* Rotates the image */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
